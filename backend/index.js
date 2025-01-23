@@ -14,7 +14,7 @@ const port = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-mongoose.connect('mongodb://0.0.0.0:27017/SMGPS')
+mongoose.connect('mongodb://127.0.0.1:27017/SMGPS')
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
